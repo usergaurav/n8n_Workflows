@@ -1,0 +1,24 @@
+
+[
+  {
+    "name": "Set value",
+    "parameters": {
+      "values": {
+        "myString": "Hello World",
+        "myNumber": 123,
+        "myBoolean": true
+      }
+    },
+    "id": "040c7554-3c62-40f7-815d-35425e75c665",
+    "type": "n8n-nodes-base.set"
+  },
+  {
+    "name": "JSON",
+    "parameters": {
+      "json": "{\n  \"message\": \"{{ $json.myString }} \"\n}\n",
+      "options": {}
+    },
+    "id": "c7b1f893-6c3a-46f6-a8e5-537684830d6c",
+    "type": "n8n-nodes-base.json"
+  }
+]
